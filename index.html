@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+
+    <style>
+    .color-div{
+        width: 50px;
+        length: 50px;
+
+    }
+    </style>
+</head>
+
+
+<body>
+
+    <h1 id = "heading" style="color: blue"></h1>
+    <h2 id = "subheading"></h2>
+    <h3 id = "mytitle"></h3>
+    <p id = "demo"></p>
+    <img id = "image" src = "" alt=""/> 
+
+    <!-- <input type="text" id="userInput">
+    <button id = "btn">Click me</button>
+    <p id="output"></p>
+
+    <input1 type = "text" id = "firstName">
+    <input2 type = "text" id = "lastName">
+    <input3 type = "text" id = "email">
+    <input4 type = "text" id = "phoneNumber">
+    <button id = "details">CLICK ME</button>
+    <p id="alldetails"></p> -->
+
+    <!-- CHANGE EVENT -->
+
+    <select name = "countries" id = "countries">
+        <option value="">Choose country</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Uganda">Uganda</option>
+        <option value="Somalia">Somalia</option>
+        <option value="Ethipia">Ethiopia</option>
+    </select>
+    <p id = "outputCountry"></p>
+
+    <select name = "colors" id = "colors">
+        <option value="">Choose your favourite color</option>
+        <option value="Green">Green</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Purple">Purple</option>
+        <option value="Pink">Pink</option>
+    </select>
+    <p id="outputColor"></p>
+
+    <!-- KEYUP -->
+     <input type="text" id="inputKeyup">
+
+     <p id="outputKeyup"></p>
+    
+    <!-- BUTTON AND COUNTER -->
+     <button id = "btn">Click me</button>
+     
+      <span id="count">0</span>
+
+   
+    <!-- ANOTHER SOLUTION -->
+    <h2>Counter</h2>
+    <button onclick="incrementCounter()">Click</button>
+    <p>Counter: <span id="counter">0</span> </p>
+    <hr/>
+    
+     <!-- TEXT INPUT AND DIV -->
+    <h2>Live Text</h2>
+    <input type="text" id="inputText" oninput="displayText()"/>
+    <div id="displayText"></div>
+    <hr/>
+
+    <!--Color Picker-->
+    <h2>Color Picker</h2>
+    <input type="color" id="colorPicker" onchange="changeColor()"/>
+    <div id="colorDiv" class="color-div"></div>
+    <hr/>
+
+    <!--Password Strength-->
+    <h2>Password Strength Checker</h2>
+    <input
+        type="password"
+        id="passwordInput"
+        oninput="checkPasswordStrength()"/>
+    <p>
+        checkPasswordStrength:
+        <span id="passwordStrength" class="strength"></span>
+
+
+    </p>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
